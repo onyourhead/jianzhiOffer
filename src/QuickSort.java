@@ -37,12 +37,9 @@ public class QuickSort {
 //        return begin;
 //    }
     public int findIndex(int begin, int end) {
-        Random random=new Random();
-//        int index=begin+random.nextInt(end-begin);
-        int index=begin;
-        exchange(index,end);
+        exchange(begin,end);
         int small=begin-1;
-        for (index = begin;index<end;++index) {
+        for (int index = begin;index<end;++index) {
             if (num[index]<num[end])
             {
                 ++small;
