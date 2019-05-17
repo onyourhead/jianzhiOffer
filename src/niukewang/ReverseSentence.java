@@ -24,7 +24,7 @@ public class ReverseSentence {
         }
         StringBuffer sb = new StringBuffer();
         for (String s : strings) {
-            sb.append(s + " ");
+            sb.append(s).append(" ");
         }
         return sb.toString().trim();
     }
